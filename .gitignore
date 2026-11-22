@@ -1,0 +1,12 @@
+node_modules/
+dist/
+target/
+.aula/
+*.mp4
+*.tsbuildinfo
+*.log
+*-keypair.json
+.env
+.env.local
+.env.*.local
+tmp-idl.json

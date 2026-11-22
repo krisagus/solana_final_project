@@ -1,0 +1,22 @@
+# Plan de Trabajo - Proyecto Final Solana Engineering Track (Advanced)
+
+- [x] **Fase 1: Preparación del Código del Programa y Mejora Funcional**
+  - [x] Implementar la instrucción `eliminar_cliente` (baja de cliente del Día 5).
+  - [x] Definir la mejora funcional adicional (validación onchain de `monto > 0` en `registrar_venta` y `cambiar_monto`).
+  - [x] Validar los contextos de cuentas y restricciones en Rust (`has_one`, `close`, `seeds`, `bump`, `require!`).
+- [x] **Fase 2: Compilación y Despliegue en Solana Playground**
+  - [x] Abrir el código en [Solana Playground](https://beta.solpg.io/).
+  - [x] Compilar (Build) y Desplegar (Deploy) en Solana Devnet.
+  - [x] Exportar el archivo `idl.json` y copiar el `Program ID` (`AFAyoCUgudQWLQAZCn5fSFHKpBqYYubfEV3ZZvUx1dvF`).
+- [x] **Fase 3: Configuración y Generación del Cliente Frontend**
+  - [x] Configurar el `idl.json` y el Program ID en el proyecto frontend.
+  - [x] Ejecutar la generación con Codama (`npm run cliente` y `npm run comprobar:idl`).
+  - [x] Integrar las acciones en `src/solana/acciones.ts` y componentes de UI en `src/components/Registro.tsx` (incluyendo `eliminar_cliente`).
+- [x] **Fase 4: Pruebas y Evidencias en Devnet**
+  - [x] Ejecutar el flujo completo conectando Solflare en Devnet.
+  - [x] Registrar firmas de transacciones exitosas (crear registro, crear cliente, registrar venta, baja/devolución y baja de cliente).
+  - [x] Ejecutar y documentar los casos de rechazo (falta de autoridad, precondiciones de baja con ventas activas, monto = 0).
+- [ ] **Fase 5: Documentación (README), Demo y Entrega**
+  - [x] Redactar el `README.md` completo según los criterios de acreditación.
+  - [ ] Grabar el video demo (60-90 segundos) en local/Codespaces mostrando la wallet y la UI.
+  - [ ] Completar el formulario de entrega en Airtable.
